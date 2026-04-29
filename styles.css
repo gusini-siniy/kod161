@@ -1,0 +1,91 @@
+main {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.section {
+    color: rgb(0, 0, 0);
+    font-family: "PT Sans Narrow", sans-serif;
+    background-size: cover;
+    padding-bottom: 40vh;
+    padding-top: 30vh;
+    padding-right: 29vw;
+    font-size: 4vh;
+}
+
+.section-content{
+    margin-left: 29vw;
+    margin-right: auto;
+    text-align: center;
+    width: 40vw;
+}
+
+#sect-2 {
+    background-color: rgb(0, 102, 255);
+    color:white;
+}
+
+#sect-3 {
+    background-color: rgb(132, 0, 255);
+    color:white;
+}
+
+#sect-4 {
+    background-color: rgb(219, 197, 71);
+    color:white;
+}
+
+
+.round-button {
+    background-color: #00000000;
+    padding-top: 0.25vh;
+    padding-bottom: 0.25vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 4vh;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) solid 4px;
+    border-radius: 100%;
+}
+
+
+
+.title-info {
+    padding: 0px;
+}
+
+.sub-hero {
+    color:rgb(199, 199, 199);
+}
+
+.info {
+    font-size: 2vh;
+}
+
+header {
+    z-index: 5;
+}
+
+.img-sect {
+    border-radius: 12px;
+    position: absolute;
+    margin-left: 45vw;
+}
+
+#kod-161 {
+    color:rgb(206, 164, 57);
+}
+
+.social-link {
+    font-size: 7vh;
+    color:white;
+}
+
+#tg:hover {
+    color: turquoise;
+}
+
+#vk:hover {
+    color:blueviolet;
+}
