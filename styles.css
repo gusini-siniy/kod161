@@ -1,15 +1,18 @@
 main {
-    position:absolute;
     top:0px;
     left:0px;
+}
+
+* {
+    font-family: "PT Sans Narrow", sans-serif;
 }
 
 .section {
     color: rgb(0, 0, 0);
     font-family: "PT Sans Narrow", sans-serif;
     background-size: cover;
-    padding-bottom: 40vh;
-    padding-top: 30vh;
+    padding-bottom: 30vh;
+    padding-top: 20vh;
     padding-right: 29vw;
     font-size: 4vh;
 }
@@ -21,18 +24,29 @@ main {
     width: 40vw;
 }
 
+#sect-1 {
+    background-color: #00000094;
+    color:white;
+}
+
 #sect-2 {
     background-color: rgb(0, 102, 255);
     color:white;
 }
 
+#sect-2>.sect-2-content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 #sect-3 {
-    background-color: rgb(132, 0, 255);
+    background-color: rgb(183, 0, 255);
     color:white;
 }
 
 #sect-4 {
-    background-color: rgb(219, 197, 71);
+    background-color: rgb(224, 198, 45);
     color:white;
 }
 
@@ -65,6 +79,7 @@ main {
 
 header {
     z-index: 5;
+    background-color: white;
 }
 
 .img-sect {
@@ -74,7 +89,7 @@ header {
 }
 
 #kod-161 {
-    color:rgb(206, 164, 57);
+    color:rgb(255, 197, 52);
 }
 
 .social-link {
@@ -88,4 +103,82 @@ header {
 
 #vk:hover {
     color:blueviolet;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+}
+
+nav {
+    font-size: 180%;
+}
+
+nav li {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    width: 100vw;
+}
+
+
+.logo {
+    display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.logo>h1 {
+    font-size: 260%;
+}
+
+footer {
+    position:absolute;
+    background-color: rgb(0, 0, 15);
+    color:white;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    width: 99vw;
+}
+
+.product-marker {
+    color:rgb(255, 255, 255);
+    font-size: 95%;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-video {
+    z-index: -1;
+    min-width: 99vw;
+    min-height: 99vh;
+    position:absolute;
+}
+
+.info-card {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px white dashed;
+    color:black;
+    border-radius: 24px;
+    font-size: 80%;
+    padding-top: auto;
+    padding-bottom: auto;
+    max-width: auto;
+}
+
+.card-tag {
+    border: 2px #3fc916 solid;
+    background-color: #3fc916;
+}
+
+.info-title {
+    font-size: 240%;
 }
