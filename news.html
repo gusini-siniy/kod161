@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КОД 161 | Новости</title>
+    <link rel="icon" type="image/x-icon" href="sh161.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="anims.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img class="logo" src="header-sh161.png" width="600vW" height="350vh"></div>
+        <nav>
+            <ul>
+                <button class="menu"><i class="fa-solid fa-bars"></i></button>
+                <li class="mobile"><a href="">Новости</a></li>
+                <li class="mobile"><a href="">Досуг</a></li>
+                <li class="mobile"><a href="">Вакансии</a></li>
+                <li class="mobile"><a href="">Архив</a></li>
+                <li class="mobile"><a href="">Связаться</a></li>
+                <li class="mobile"><a href="">Юр. Информация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="news-sidebar">
+            <div class="theme-filter">
+                <h1>Темы</h1>
+                <div class="theme-checboxes">
+                    <input type="checkbox" id="theme-nature">
+                    <label for="theme-nature">Столовка</label>
+                    <input type="checkbox" id="theme-nature">
+                    <label for="theme-nature">Столовка</label>
+                    <input type="checkbox" id="theme-nature">
+                    <label for="theme-nature">Столовка</label>
+                    <input type="checkbox" id="theme-nature">
+                    <label for="theme-nature">Столовка</label>
+                    <input type="checkbox" id="theme-nature">
+                    <label for="theme-nature">Столовка</label>
+                </div>
+            </div>
+            <div class="recomendations">
+
+            </div>
+            <div class="info-sidebar">
+
+            </div>
+        </div>
+        <div class="news-posts">
+            <div class="news-card">
+                <h1>Название</h1>
+                <p>Текст</p>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <form class="redaction">
+        <button class="add-file" type="button">Прикрепить Файл</button>
+        <button class="text-style-bold" type="button"><b>Толстый</b></button>
+        <button class="text-style-italic" type="button"><i>Косой</i></button>
+        <button class="text-stile-underline" type="button"><u>Черта</u></button>
+        <button class="text-style-strike" type="button"><s>Зачеркнутый</s></button>
+        <button class="text-stile-spoiler" type="button">Наведи <span class="spoiler-text">Текст Со Спойлером</span></button>
+        <input type="text" class="text-header-input" placeholder="Заголовок Новости" size="50" required maxlength="50">
+        <input type="text" class="text-under-header-input" placeholder="Подзаголовок Новости" size="50" required maxlength="75">
+        <textarea></textarea>
+        <button class="news-add" type="submit">Создать Новость</button>
+    </form>
+    <footer>
+        <div class="footer-info">
+ 
+        </div>
+    </footer>
+</body>
+</html>
