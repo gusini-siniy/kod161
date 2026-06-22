@@ -3,74 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КОД 161</title>
+    <title>Код 161 - Главная Страница</title>
+    <meta name="description" content="Сайт Газеты Школы №161 г. Красноярска.">
     <link rel="icon" type="image/x-icon" href="sh161.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="anims.js"></script>
+    <noscript>
+        Ваш браузер не поддерживает Javascript или он отключён.
+    </noscript>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <button class="menu"><i class="fa-solid fa-bars"></i></button>
-                <li class="mobile"><a href="#anchor">Досуг</a></li>
-                <li class="mobile"><a href="">Вакансии</a></li>
-                <li class="mobile"><a href="">Архив</a></li>
-                <li class="mobile"><a href="">Связаться</a></li>
-                <li class="mobile"><a href="">Юр. Информация</a></li>
+        <container class="header__main_container">
+            <ul class="nav__list">
+                <div class="nav__logo">
+                    <img src="sh161.ico" alt="Sh 161's Logo" id="logo__img">
+                </div>
+                <li class="nav__list_item"><a href="google.com">Свежие Посты</a></li>
+                <li class="nav__list_item"><a href="google.com">Вакансии</a></li>
+                <li class="nav__list_item"><a href="google.com">Досуг</a></li>
+                <li class="nav__list_item"><a href="google.com">Архив</a></li>
             </ul>
-        </nav>
+        </container>
     </header>
+    <img alt="📰Школьная Газета. Фото." src="header-sh161.png" class="hero__img">
     <main>
-        <section class="section" id="sect-1">
-            <div class="section-content" id="sect_1_content">
-                <div class="title-info">
-                    <div class="product-marker"><h3 id="product-marker-id">6+</h3></div>
-                    <div class="info">
-                        <p><i class="fa-solid fa-rocket"></i> ПРОТОТИП</p>
+        <container class="main__container">
+            <section class="hero__section">
+                <div class="hero__text">
+                    <h3 class="hero__text_description">📰Школьная газета🚀</h3>
+                    <h1 class="hero__text_h1">«КОД 161»</h1>
+                    <ul class="hero__list_social">
+                        <li><a class="list__social_item"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a class="list__social_item"><i class="fa-brands fa-vk"></i></a></li>
+                        <li><a class="list__social_item"><i class="fa-brands fa-telegram"></i></a></li>
+                    </ul>
+                    <h2 class="hero__text_h2">Мы - "КОД 161" школьная газета, в которой публикуются все события, мероприятия школы <a href="https://sh161-krasnoyarsk-r04.gosweb.gosuslugi.ru/">Школы 161 г. Красноярска</a></h2>
+                    <a class="hero__btn">Читать Газету</a>
+                </div>
+            </section>
+            <section class="info__section">
+                <h1 class="info__text_h1">🚀📰Читайте Всю Правду О Школьной Жизни!</h1>
+                <div class="info__cards">
+                    <div class="card__item">
+                        <div class="card__info">
+                            <h2 class="info__text_header">Новость 1</h2>
+                            <p class="info__text_paragraph">Текст</p>
+                            <label class="card__time_label">12.05.2026</label>
+                        </div>
                     </div>
-                    <div class="hero"><h1 id="kod-161">«КОД 161»</h1></div>
-                    <button type="button" class="hero-btn">Поехали!🚀</button>
+                    <div class="card__item">
+                        <div class="card__info">
+                            <h2 class="info__text_header">Новость 2</h2>
+                            <p class="info__text_paragraph">Текст</p>
+                            <label class="card__time_label">12.05.2026</label>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__info">
+                            <h2 class="info__text_header">Новость 3</h2>
+                            <p class="info__text_paragraph">Текст</p>
+                            <label class="card__time_label">12.05.2026</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-            <section class="section" id="sect-5">
-            <div class="section-content" id="sect_2_content">
-                <div class="sub-hero"><h4>Что Это?</h4></div>
-                <div class="hero"><h1>Газета, Которая Нужна Тебе.</h1></div>
-                <div class="reasons-gallery">
+                <a class="info__more_btn" href="google.com">Подробнее.</a>
+            </section>
+            <section class="job__section">
+                <h1 class="info__text_h1">Хотите Стать Частью Нашего Коллектива?</h1>
+            </section>
+            <section class="info__section">
+                <div class="info__cards">
+                    <div class="card__item">
+                        <div class="card__info">
+                            <h2 class="info__text_header">Новость 1</h2>
+                            <p class="info__text_paragraph">Текст</p>
+                            <label class="card__time_label">12.05.2026</label>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__info">
+                            <h2 class="info__text_header">Новость 2</h2>
+                            <p class="info__text_paragraph">Текст</p>
+                            <label class="card__time_label">12.05.2026</label>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__info">
+                            <h2 class="info__text_header">Новость 3</h2>
+                            <p class="info__text_paragraph">Текст</p>
+                            <label class="card__time_label">12.05.2026</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section" id="sect-2">
-            <div class="section-content" id="sect_2_content">
-                <div class="hero"><h1>Жизнь Школы, В Твоих Руках.</h1></div>
-                <div class="under-hero"><h3>Создавай Новости, Что Будет Читать Вся Школа.</h3></div>
-            </div>
-        </section>
-        <section class="section" id="sect-3">
-            <div class="section-content" id="sect_3_content">
-                <div class="hero"><h1>Ты Нужен — НАМ.</h1></div>
-                <div class="contacts">
-                </div>
-            </div>
-        </section>
+                <a class="info__more_btn" href="google.com">Подробнее.</a>
+            </section>
+        </container>
     </main>
     <footer>
-        <div class="footer-info">
-            <h2></h2>
-        </div>
+        <container class="footer__container">
+            <div class="footer__logos">
+                    <img class="footer__image" alt="" src="">
+                    <img class="footer__image" alt="" src="">
+            </div>
+            <div class="footer__list_container">
+                <ul class="footer__list">
+                    <li class="footer__list_title"><h2>TITLE</h2></li>
+                    <li class="footer__list_item"><a></a></li>
+                    <li class="footer__list_item"><a></a></li>                   
+                    <li class="footer__list_item"><a></a></li>
+                    <li class="footer__list_item"><a></a></li>    
+                </ul>
+            </div>
+        </container>
     </footer>
 </body>
 </html>
