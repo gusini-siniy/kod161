@@ -88,6 +88,11 @@ footer {
     color:#1f1f1f;
 }
 
+.age-marker {
+    color:#1f1f1f;
+    font-size: 1.2em;
+}
+
 .card__item {
     border: #bebcbc 2px solid;
     display:grid;
