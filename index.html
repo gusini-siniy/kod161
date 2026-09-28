@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% block title %}Главная - "КОД 161"{% endblock %}
+
+{% block content%}
+        <div class="main__container">
+            <div class="main_left">                
+                <div class="menu_left">
+                    <ul class="menu_left-list">
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-newspaper"></i>Все новости</a></li>
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-graduation-cap"></i>Учёба</a></li>
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-trophy"></i>Спорт</a></li>
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-masks-theater"></i>Культура и события</a></li>
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-circle-play"></i>Медиа</a></li>
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-heart"></i>Волонтёрство</a></li>
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-star"></i>Досуг</a></li>
+                        <li class="menu_left-list-element"><a><i class="fa-solid fa-users"></i>Наши люди</a></li>
+                    </ul>
+                </div>
+                <div class="banner_left">
+                    <img src="./static/placeholder_left.png">
+                </div>
+                <div class="popular_cards">
+                    <h1><i class="fa-solid fa-star"></i>Популярное</h1>
+                    <ul class="popular_cards-list">
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>План мероприятий на сентябрь</h2><h3>08.09.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Как прошла линейка 1 сентября?</h2><h3>02.09.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Советы для первоклассников</h2><h3>01.09.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Школьный спорт: вперед к победам!</h2><h3>28.08.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Интервью с учителем года</h2><h3>25.08.2026</h3></div></a></li>
+                    </ul>
+                </div>
+                <div class="banner_left">
+                    <img src="./static/banner_left.png">
+                    <button class="btn_on_banner" type="submit"><h2>Отправить<i class="fa-solid fa-arrow-right-long"></i></h2></button>
+                </div>
+            </div>
+            <div class="main_center">
+                <div class="main_hero_card">
+                    <a href="google.com" class="news_card-el_a"></a>
+                        <img src="./static/news_card_img1.jpg" id="hero_card_img">
+                        <div class="hero_card_text">
+                            <h1>Поездка в Школьный Лагерь.</h1>
+                            <h2>Недавно наша редакция побывала в школьном лагере. Читайте как это было!</h2>
+                        </div>
+                        <button class="btn_on_banner" type="submit" onclick="card_next();"><h2>Читать Подробнее <i class="fa-solid fa-arrow-right-long"></i></h2></button>
+                        <div class="hero_card_indicator"><h2 id="indicator_text">🟡⚪⚪⚪</h2></div>
+                    </a>
+                </div>
+                <div class="section_title"><h1 class="title_cards">Главные Новости</h1><a class="more_cards">Все новости <i class="fa-solid fa-arrow-right-long"></i></a></div>
+                <hr>
+                <div class="imp_news_card">
+                    <div class="news_card-el">
+                        <a href="google.com" class="news_card-el_a">
+                            <img src="./static/news_card_img2.jpg">
+                            <div class="news_card_text">
+                                <h2 class="card_tag study">Учёба</h2>
+                                <h2 class="card_title">Старт предметных недель и олимпиад.</h2>
+                                <h2 class="card_subtext">В этом учебном году вас ждут интересные задания, новые форматы и возможность проверить свои силы!</h2>
+                                <h3 class="card_date">10 сентября 2026 года.</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_card-el">
+                        <a href="google.com" class="news_card-el_a">
+                            <img src="./static/news_card_img3.jpg">
+                            <div class="news_card_text">
+                                <h2 class="card_tag culture">Культура</h2>
+                                <h2 class="card_title">Концерт ко Дню Знаний.</h2>
+                                <h2 class="card_subtext">Как прошла праздничная линейка и какие сюрпризы ждут нас в этом месяце?</h2>
+                                <h3 class="card_date">2 сентября 2026 года.</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_card-el">
+                        <a href="google.com" class="news_card-el_a">
+                            <img src="./static/news_card_img4.jpg">
+                            <div class="news_card_text">
+                                <h2 class="card_tag sport">Спорт</h2>
+                                <h2 class="card_title">Эстафеты и командый дух.</h2>
+                                <h2 class="card_subtext">Школьные соревнования уже стартовали! Узнай как прошел первый этап.</h2>
+                                <h3 class="card_date">5 сентября 2026 года.</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h1>Интересное</h1>
+                <hr>
+                <div class="imp_news_card">
+                    <div class="news_card-el">
+                        <a href="google.com" class="news_card-el_a">
+                            <img src="./static/news_card_img6.jpg">
+                            <div class="news_card_text">
+                                <h2 class="card_tag media">Медиа</h2>
+                                <h2 class="card_title">Школьные репортёры ищут героев!</h2>
+                                <h2 class="card_subtext">Присоединяйся к нашей команде и рассказывай о самом интересном!</h2>
+                                <h3 class="card_date">7 сентября 2026 года.</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_card-el">
+                        <a href="google.com" class="news_card-el_a">
+                        <img src="./static/news_card_img5.jpg">
+                        <div class="news_card_text">
+                            <h2 class="card_tag volunteer">Волонтёрство</h2>
+                            <h2 class="card_title">Добрые дела начинаются с тебя.</h2>
+                            <h2 class="card_subtext">Как помочь школе, городу и тем, кто рядом.</h2>
+                            <h3 class="card_date">6 сентября 2026 года.</h3>
+                        </div>
+                    </div>
+                    <div class="news_card-el">
+                        <a href="google.com" class="news_card-el_a">
+                            <img src="./static/news_card_img7.jpg">
+                            <div class="news_card_text">
+                                <h2 class="card_tag art">Творчество</h2>
+                                <h2 class="card_title">Твой талант нужен школе!</h2>
+                                <h2 class="card_subtext">Выставки, конкурсы, концерты — у нас много форматов для самореализации.</h2>
+                                <h3 class="card_date">4 сентября 2026 года.</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner_left">
+                    <img src="./static/banner_center.png">
+                    <button class="btn_on_banner" type="submit" id="banner_center_btn"><h2>Подробнее <i class="fa-solid fa-arrow-right-long"></i></h2></button>
+                </div>            
+            </div>
+            <div class="main_right">
+                <div class="banner_left" id="banner_nomargin">
+                    <img src="./static/quote.png">
+                </div>
+                <div class="calendar_right">
+                    <h2>📆Календарь Событий</h2>
+                    <div class="select-month"><button type="button" class="select-month-btn" onclick="back();"><i class="fa-solid fa-angle-left"></i></button><h2 class="month_text">Сентябрь 2026</h2><button type="button" class="select-month-btn" onclick="next();"><i class="fa-solid fa-angle-right"></i></button></div>
+                    <table class="calendar_content">
+                        <tr class="week_names">
+                            <th>Пн</th>
+                            <th>Вт</th>
+                            <th>Ср</th>
+                            <th>Чт</th>
+                            <th>Пт</th>
+                            <th>Сб</th>
+                            <th>Вс</th>
+                        </tr>
+                        <tr class="week_1">
+                            <td> </td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr class="week_2">
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr class="week_3">
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="popular_cards">
+                    <h1>Последние Записи</h1>
+                    <ul class="popular_cards-list">
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>План мероприятий на сентябрь</h2><h3>08.09.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Как прошла линейка 1 сентября?</h2><h3>02.09.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Советы для первоклассников</h2><h3>01.09.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Школьный спорт: вперед к победам!</h2><h3>28.08.2026</h3></div></a></li>
+                        <li class="popular_cards-list-element"><a><div class="fast_news_card"><h2>Интервью с учителем года</h2><h3>25.08.2026</h3></div></a></li>
+                    </ul>
+                </div>
+                <div class="banner_left" id="social_media_channel">
+                    <h1>Внимание!</h1>
+                    <h2>Важные новости, конкурсы, опросы и многое другое в нашем Telegram-Канале</h2>
+                    <button class="social_media_btn">Подписаться</button>
+                </div>
+                <div class="banner_left" id="archive">
+                    <h1>Газета Код 161</h1>
+                    <h2>Печатная и электронная версия. Следующий номер — в октябре 2026 г.</h2>
+                    <button class="archive_btn">Архив номеров</button>
+                </div>
+            </div>
+        </div>
+{% endblock%}
